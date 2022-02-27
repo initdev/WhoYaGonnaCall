@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css-->
+    <link rel="stylesheet" href="profile-styles.css">
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- select2-cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="scripts.js"></script>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- font-awesome-->
+    <script src="https://kit.fontawesome.com/534f721906.js" crossorigin="anonymous"></script>
+    <!-- data tables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+</head>
+<body>
+    <div class="content-profile-page">
+        <div class="profile-user-page card">
+           <div class="img-user-profile">
+             <img class="profile-bgHome" src="https://previews.123rf.com/images/artlana/artlana1802/artlana180200009/95037607-fondo-canadese-della-bandiera-di-lerciume-con-le-linee-spazzolate-acquerello-modello-per-vacanze-gio.jpg" />
+             <img class="avatar" src="https://st4.depositphotos.com/1012074/26712/v/600/depositphotos_267121138-stock-illustration-young-avatar-face-with-sunglasses.jpg"/>
+            </div>
+                <div class="user-profile-data">
+                    <h1 class="user-name">Ryan Kennedy</h1>
+                    <h5 class="user-role">Developer</h5>
+               </div>
+               <div class="description-profile">Front-End developer with a passion for learning</div>
+            <ul class="data-user">
+                <li><a><strong>Role</strong><span class="user-role">CS-01</span></a></li>
+                <li><a><strong>User ID</strong><span class="user-id">RKD493</span></a></li>
+                <li><a><strong>Email</strong><span class="user-email">Ryan.Kennedy@cra-arc.gc.ca</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="profile-skills">
+        <div class="table-header">
+            <table id="technical-skills-table" class="user-table">
+                <thead>
+                    <tr>
+                        <th>Technical Skills</th>
+                        <th>Skill Level</th>
+                        <th>Endorsements</th>
+                        <th>Endorse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="add-skill">
+            <select class="single-select" id="tech-skill">
+                <option></option>
+                <optgroup label="Backend">
+                    <option value="J">Java</option>
+                    <option value="P">Python</option>
+                    <option value="JS">javascript</option>
+                    <option value="N">Node.js</option>
+                    <option value="Cb">Cobol</option>
+                    <option value="C">C</option>
+                    <option value="CP">C++</option>
+                </optgroup>
+                <optgroup label="Front-end">
+                    <option value="H">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="SCSS">SCSS</option>
+                    <option value="R">React</option>
+                    <option value="A">Angular</option>
+                    <option value="V">Vue</option>
+                    <option value="T">TypeScript</option>
+                    <option value="S">Swift</option>
+                </optgroup>
+            </select>
+            <select class="single-select" id="tech-skill-level">
+                <option></option>
+                <option value="J">Beginner</option>
+                <option value="J">Intermediate</option>
+                <option value="J">Advanced</option>
+                <option value="J">Expert</option>
+            </select>
+            <button class="skill-button" id="btn-tech-skills">Add new skill</button>
+        </div>
+    </div>
+    <div class="profile-skills">
+        <div class="table-header">
+            <table id="soft-skills-table" class="user-table">
+                <thead>
+                    <tr>
+                        <th>Soft Skills</th>
+                        <th>Endorsements</th>
+                        <th>Endorse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="add-skill">
+            <select class="single-select" id="soft-skill">
+                <option></option>
+                <optgroup label="Soft Skills">
+                    <option value="N">Negotiation</option>
+                    <option value="M">Managerial</option>
+                    <option value="CR">Conflict Resolution</option>
+                </optgroup>
+                <optgroup label="Hard Skills">
+                    <option value="PS">Problem Solving</option>
+                    <option value="L">Leadership</option>
+                </optgroup>
+            </select>
+            <button class="skill-button" id="btn-soft-skills">Add new skill</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

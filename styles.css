@@ -1,3 +1,5 @@
+* {transition: 0.4s ease;} 
+
 .main-content{
 	width: 50%;
 	border-radius: 20px;
@@ -14,7 +16,7 @@
 	justify-content: center;
 	color: #fff;
 }
-.fa-android{
+.fa-phone{
 	font-size:3em;
 }
 @media screen and (max-width: 640px) {
@@ -61,16 +63,33 @@ form{
 }
 .btn{
 	transition: all .5s ease;
-	width: 70%;
+	width: 50%;
 	border-radius: 30px;
 	color:#000000;
 	font-weight: 600;
 	background-color: #fff;
 	border: 1px solid #000000;
-	margin-top: 1.5em;
+	margin-top: 2.5em;
 	margin-bottom: 1em;
+	padding-top: 2.5%;
 }
 .btn:hover, .btn:focus{
-	background-color: #008080;
+	background-color: #8a8a8a;
 	color:#fff;
 }
+
+body{
+	margin: 0%;
+}
+
+.flex-container {
+	display: flex;           /* establish flex container */
+	flex-direction: column;  /* make main axis vertical */
+	justify-content: center; /* center items vertically, in this case */
+	align-items: center;     /* center items horizontally, in this case */
+	height: 100%;
+	width: 100%;
+	padding-top: 15%;
+}
+            
+
