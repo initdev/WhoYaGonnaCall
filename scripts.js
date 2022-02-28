@@ -3,6 +3,10 @@ $(document).ready( function () {
         placeholder: "Select"
     });
 
+    $('.multiple-select').select2({
+        placeholder: "Select as many skills as you need"
+    });
+
     $('#btn-login').click(function(){
         window.location.href = 'search.html';
         return false;
@@ -43,6 +47,17 @@ $(document).ready( function () {
           nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
         }
       })
+
+    var tech_table = $('#search-table').DataTable({
+        paging: false,
+        searching: false,
+        info: false,
+        "columnDefs": [ {
+            "targets": -1,
+            "data": null,
+            "defaultContent": "<button class=\"table-button\"><i class=\"fas fa-magnifying-glass\"></i></button>"
+        } ],
+    });
 
    var tech_table = $('#technical-skills-table').DataTable({
         paging: false,

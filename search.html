@@ -17,27 +17,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- font-awesome-->
     <script src="https://kit.fontawesome.com/534f721906.js" crossorigin="anonymous"></script>
-    <!-- velocity-->
-
+    <!-- data tables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
 </head>
 <body>
     <div class="overlay-navigation">
         <nav role="navigation">
           <ul>
-            <li><a href="#" data-content="Curious?">Profile</a></li>
-            <li><a href="#" data-content="I got game">Search</a></li>
-            <li><a href="#" data-content="Only the finest">Logout</a></li>
+            <li><a href="profile.html" data-content="Head to your profile to add skills">Profile</a></li>
+            <li><a href="search.html" data-content="Find an employee that satisfies your requirements">Search</a></li>
+            <li><a href="index.html" data-content="All done? Take care">Logout</a></li>
           </ul>
         </nav>
       </div>
-      <section class="home">
-          <div>Who Ya Gonna Call?</div>
-        <div class="open-overlay">
-          <span class="bar-top"></span>
-          <span class="bar-middle"></span>
-          <span class="bar-bottom"></span>
-        </div>
+    <section class="home">
+        <div>Who Ya Gonna Call? <i class="fa fa-phone"></i></div>
+      <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
+      </div>
       </section>
+      <div class="container">
+        <div class="spaced-header">
+          <h1>Select the skills you're looking for:</h1>
+        </div>
+        <div class="add-skill">
+          <select class="multiple-select" id="search-skill" multiple="multiple">
+              <option></option>
+              <optgroup label="Backend">
+                  <option value="J">Java</option>
+                  <option value="P">Python</option>
+                  <option value="JS">javascript</option>
+                  <option value="N">Node.js</option>
+                  <option value="Cb">Cobol</option>
+                  <option value="C">C</option>
+                  <option value="CP">C++</option>
+              </optgroup>
+              <optgroup label="Front-end">
+                  <option value="H">HTML</option>
+                  <option value="CSS">CSS</option>
+                  <option value="SCSS">SCSS</option>
+                  <option value="R">React</option>
+                  <option value="A">Angular</option>
+                  <option value="V">Vue</option>
+                  <option value="T">TypeScript</option>
+                  <option value="S">Swift</option>
+              </optgroup>
+          </select>
+          <button class="skill-button" id="btn-search">Search</button>
+      </div>
+      <div class="results-spaced">
+      <h1>Search Results</h1>
+      <table id="search-table" class="user-table">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>% Match</th>
+                <th>View Profile</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      </div>
+      </div>
 </body>
 </html>
 
